@@ -1,0 +1,31 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <p v-once>{{ titulo }}</p>
+    <!-- V-ONCE (atualiza somente uma vez independente das mudanças) -->
+    <p>{{ saudacao() }}</p>
+    <a v-bind:href="link">Google</p>
+    <!-- V-BIND (diretiva [propriedade personalizada] que são interpreta pelo Vue) -->
+
+    <hr>
+
+    <p v-html="linkHtml"></p>
+    <!-- V-HTML (diretiva [propriedade personalizada] que são interpreta pelo Vue) -->
+</div>
+
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            titulo: 'Usando o VueJs!',
+            link: 'http://google.com.br',
+            linkHtml: '<a href="http://google.com">Google</a>'
+        },
+        methods: {
+            saudacao: function() {
+                this.titulo = 'Bom dia!!!'
+                return this.titulo
+            }
+        }
+    })
+</script>

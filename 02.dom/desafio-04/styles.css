@@ -1,0 +1,40 @@
+#efeito {
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+}
+
+.destaque {
+	background-color: red;
+	width: 200px !important;
+}
+
+.encolher {
+	background-color: gray;
+	width: 50px !important;
+}
+
+.borda {
+	border: 5px solid green !important;
+}
+
+.bg {
+	background-color: blue;
+	color: white;
+}
+
+.tr-fl {
+	transform: rotate(60deg);
+}
+
+.barra-progresso {
+	border: 2px solid #000;
+	width: 500px;
+	height: 18px;
+	text-align: center;
+	color: #fff;
+}
+
+.progresso {
+	background-color: blue;
+}
